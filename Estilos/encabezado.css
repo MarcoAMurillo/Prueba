@@ -1,0 +1,177 @@
+.encabezado {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border: 1px solid rgb(228, 228, 228);
+}
+
+.seccion-izquierda {
+  display: flex;
+  align-items: center;
+}
+
+.seccion-central {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.seccion-derecha {
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.icono-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.icono-youtube {
+  height: 20px;
+  cursor: pointer;
+}
+
+.boton-buscar{
+  height: 40px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.boton-buscar,
+.boton-microfono,
+.icono-cargar-contenedor,
+.icono-apps-contenedor,
+.icono-notificacion-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.boton-buscar .tooltip,
+.boton-microfono .tooltip,
+.icono-cargar-contenedor .tooltip,
+.icono-apps-contenedor .tooltip,
+.icono-notificacion-contenedor .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.boton-buscar:hover .tooltip,
+.boton-microfono:hover .tooltip,
+.icono-cargar-contenedor:hover .tooltip,
+.icono-apps-contenedor:hover .tooltip,
+.icono-notificacion-contenedor:hover .tooltip{
+  opacity: 1;
+}
+
+.icono-buscar{
+  height: 25px;
+  cursor: pointer;
+}
+
+.boton-microfono{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+
+.icono-microfono{
+  height: 24px;
+}
+
+.Cuadro-Buscar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+
+.Cuadro-Buscar::placeholder {
+  font-size: 16px;
+}
+
+.icono-cargar {
+  height: 24px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.icono-apps {
+  height: 24px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.icono-notificacion {
+  height: 24px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.icono-perfil {
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.icono-notificacion-contenedor {
+  position: relative;
+}
+
+.conteo-notificacion {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border-radius: 10px;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
